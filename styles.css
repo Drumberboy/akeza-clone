@@ -73,7 +73,7 @@ body {
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+ border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -84,30 +84,7 @@ body {
     /* Black background with 0.5 opacity */
 }
 
-/* Caption text */
-/* .text {
-  color: #f2f2f2;
-  font-size: 45px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: start;
-  background-color:#d8d8d8;
-} */
-
-/* Number text (1/3 etc) */
-/* .textOverImage {
-  display: flex;
-  color: #f2f2f2;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  font-size: 20px;
-  
-} */
-
-/* The dots/bullets/indicators */
+/*The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -115,7 +92,7 @@ body {
   margin: 0 2px;
   background: rgb(0, 0, 0);
     /* Fallback color */
-    background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -124,7 +101,7 @@ body {
 .active, .dot:hover {
     background: rgb(0, 0, 0);
       /* Fallback color */
-      background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 /* Fading animation */
@@ -139,28 +116,49 @@ body {
 }
 /* side images */
 .mainSliding {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+  /* display: flex;
+  /* flex-wrap: wrap; */
+  /* padding: 0 4px 5 5;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 2vw); */
+  grid-gap: 5px;
+
 }
+/* .column:hover{
+opacity: 1;
+} */
 
 /* Create two equal columns that sits next to each other */
 .column {
-  flex: 50%;
-  padding: 0 4px;
+  background-color: rgb(0, 0, 0);
 }
 
 .column img {
-  margin-top: 8px;
-  vertical-align: middle;
+  /* vertical-align: top; */
+  cursor: pointer;
+}
+.column .overlay1{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  color: #f1f1f1;
+    /* color: white; */
+  /* font-size: 20px;
+  padding: 20px;
+  text-align: center; */
+  /* z-index: -1; */
+
+}
+.column img:hover{
+  opacity: .5;
 }
 /* under image slider */
 .myImg {
-  border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-  width: 100%;
-  max-width: 300px;
   background-color: #000;
   background-size: cover;
 }
@@ -170,27 +168,59 @@ body {
   opacity: 0.5;
 
 }
-
+.mainSliding .overlay1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    /* background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); */
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 10%; 
+    /* transition: .5s ease;
+    opacity: 0; */
+    /* width: auto; */
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    z-index: -1;
+}
 
 #under_slider {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 2vw);
   grid-gap: 5px;
-
-
 }
 
 #under_slider .imge1 {
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 200px;
   /* width: 100%; */
+}
+#under_slider .myImg{
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border-radius: 0px;
 }
 
 #under_slider .imge1:hover{
 opacity: 1;
 }
 
-
+.un_textOverImage1{
+  display: flex;
+  color: #f2f2f2;
+  padding: 8px 12px;
+  position:absolute;
+  top: 0;
+  left: 16px;
+  font-size: 20px;
+}
 
 /*  */
 .textOverImage_un{
@@ -199,7 +229,7 @@ opacity: 1;
   padding: 0px;
   position: absolute;
   top: 0;
- left: 16px;
+  left: 16px;
   font-size: 14px;
 
 }
@@ -247,6 +277,11 @@ opacity: 1;
   opacity: 0.5;
 
 }
+
+/* #myImg1{
+  width: 20vh;
+  height: 20vh;
+} */
 /* table,td {
   border-collapse: collapse;
   border: 2px solid black;

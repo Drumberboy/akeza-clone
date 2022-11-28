@@ -373,11 +373,19 @@ color: rgb(50,190,245);
 .article3imge2:hover{
   opacity: 0.5;
 }
-.art23_3allpict{
+#art23_3allpict{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
 }
 
+#art23_3allpict .textOverImage_mainSliding1{
+  display: flex;
+  color: #f2f2f2;
+  padding: 8px 12px;
+  position: absolute;
+  /* top: 0; */
+  font-size: 12px;
+}
 
 

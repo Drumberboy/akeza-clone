@@ -249,15 +249,42 @@ opacity: 1;
 opacity: 1;
 }
 
-.un_textOverImage1{
+#under_slider  .un_textOverImage1{
+  position: absolute;
+  bottom: 6%;
+  font-size: 15px;
   display: flex;
   color: #f2f2f2;
-  padding: 8px 12px;
-  position:absolute;
-  top: 0;
-  left: 16px;
-  font-size: 20px;
 }
+
+#under_slider  .un_textOverImage2{
+  position: absolute;
+  bottom: 6%;
+  font-size: 15px;
+  display: flex;
+  color: #f2f2f2;
+}
+#under_slider  .un_textOverImage3{
+  position: absolute;
+  bottom: 6%;
+  font-size: 15px;
+  display: flex;
+  color: #f2f2f2;
+}
+#under_slider  .un_textOverImage4{
+  position: absolute;
+  bottom: 6%;
+  font-size: 15px;
+  display: flex;
+  color: #f2f2f2;
+}
+
+#under_slider .un_text:hover{
+  text-decoration:underline;
+  color: rgb(50, 190, 245);
+}
+
+
 
 /*  */
 .textOverImage_un{
@@ -270,20 +297,18 @@ opacity: 1;
   font-size: 14px;
 
 }
-.imge1art{
-  position: relative;
-  justify-content: center;
-  /* justify-items: left; */
-  z-index: -1;
-}
-.text-buja{
-  width: 75%;
-}
 .art1{
   display: flex;
-  gap: 0.5em;
-  
 }
+.myImg1{
+  width: 15vh;
+  height: 10vh;
+}
+.flaoting-left-text {
+text-align: start;
+margin-bottom: 20%;
+}
+
 .myImg2{
   border-radius: 5px;
   cursor: pointer;
@@ -301,36 +326,67 @@ opacity: 1;
       /* top: 0; */
       font-size: 20px;
 }
+.art2{
+  width: 60%;
+}
+.art2 .imge1art{
+  width: 50vw;
+  height: 50vh;
+}
+.art2 .textOverImage_art2{
+  display: flex;
+  color: #f2f2f2;
+  padding: 8px 12px;
+  position: absolute; 
+  font-size: 15px;
+}
+
+ .art2  img{
+  width:20vw;
+  height: 40vh;
+}
+.art2 img:hover {
+  opacity: .5;
+}
+.art2 .textOverImage_art2:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+
+.art2 .text-buja {
+margin-top: 0;
+margin-bottom:50%;
+vertical-align: top;
+}
+.art2 .text-buja h5:hover{
+text-decoration: underline;
+color: rgb(50,190,245);
+}
+
 .article3imge2{
   background-color: #000;
-  background:url("images/bujapaymini.jpg") no-repeat;
-    width: 350px;
-    height: 250px;
-    position: absolute;
+  position: absolute;
+  border-radius: none;
    
     
 }
 .article3imge2:hover{
   opacity: 0.5;
-
+}
+#art23_3allpict{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
 }
 
-/* #myImg1{
-  width: 20vh;
-  height: 20vh;
-} */
-/* table,td {
-  border-collapse: collapse;
-  border: 2px solid black;
-  padding: 0px;
-  vertical-align: top;
-} */
+#art23_3allpict .textOverImage_mainSliding1{
+  display: flex;
+  color: #f2f2f2;
+  padding: 8px 12px;
+  position: absolute;
+  /* top: 0; */
+  font-size: 12px;
+}
 
-
-
-/* table td{
-  border: 2px;
-  padding: 5px 5px;
-  vertical-align: top;
-} */
 

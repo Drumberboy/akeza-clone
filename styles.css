@@ -224,6 +224,7 @@ opacity: 1;
 
 }
 
+
 #under_slider {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -387,5 +388,80 @@ color: rgb(50,190,245);
   /* top: 0; */
   font-size: 12px;
 }
+.column_artsp {
+  background-color: rgb(0, 0, 0);
+}
+.column_artsp  img {
+  /* vertical-align: top; */
+  cursor: pointer;
+}
+.column_artsp .overlay_artsp {
+  position: absolute;
+  /* top: 25%; */
+  right: 42%;
+  bottom: 0%;
+  left: 62%;
+  width: 18.5%;
+  height: 15%;
+  color: #f1f1f1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+}
 
+.column_artsp .overlay_artsp:hover {
+  background-color: blue;
+  text-decoration: underline;
+}
+
+.column_artsp img:hover {
+  opacity: .5;
+}
+
+.column_artsp .textOverImage_mainSliding1 {
+  display: flex;
+  color: #f2f2f2;
+  padding: 8px 12px;
+  position: absolute;
+  /* top: 0; */
+  font-size: 12px;
+}
+.column_artsp .overlay2 {
+  position: absolute;
+  /* top: 25%; */
+  right: 32%;
+  bottom: 0%;
+  left: 81%;
+  width: 18%;
+  height: 15%;
+  color: #f1f1f1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.column_artsp .overlay2:hover {
+  background-color: blue;
+  text-decoration: underline;
+}
+
+.column_artsp .textOverImage_mainSliding2 {
+  display: flex;
+  color: #f2f2f2;
+  padding: 8px 12px;
+  position: absolute;
+  /* top: 0; */
+  font-size: 12px;
+}
+
+.column_artsp .textOverImage_mainSliding3 {
+  display: flex;
+  /* top: 40%; */
+  color: #f2f2f2;
+  padding: 8px 12px;
+  position: absolute;
+  font-size: 12px;
+}
 

@@ -383,7 +383,7 @@ color: rgb(50,190,245);
   /* height: 77%; */
   /* background-repeat: no-repeat; */
 }
-#art23_3allpict  .column_artsp img{
+.column_artsp img{
   cursor:pointer;
 }
 .column_artsp1 img:hover{
@@ -407,9 +407,9 @@ color: rgb(50,190,245);
   background: rgba(0, 0, 0, 0.5); */
   /* display: flex; */
   /* color: #f2f2f2; */
-  position: relative;
+  position: absolute;
     font-size: 20px;
-    margin-bottom: 50px;
+    /* margin-bottom: 60px; */
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
 } 

@@ -245,7 +245,7 @@ opacity: 1;
 
 #under_slider  .un_textOverImage1{
   position: absolute;
-  bottom: 10%;
+  /* bottom: 10%; */
   font-size: 15px;
   display: flex;
   color: #f2f2f2;
@@ -253,21 +253,21 @@ opacity: 1;
 
 #under_slider  .un_textOverImage2{
   position: absolute;
-  bottom: 10%;
+  /* bottom: 10%; */
   font-size: 15px;
   display: flex;
   color: #f2f2f2;
 }
 #under_slider  .un_textOverImage3{
   position: absolute;
-  bottom: 10%;
+  /* bottom: 10%; */
   font-size: 15px;
   display: flex;
   color: #f2f2f2;
 }
 #under_slider  .un_textOverImage4{
   position: absolute;
-  bottom: 10%;
+  /* bottom: 10%; */
   font-size: 15px;
   display: flex;
   color: #f2f2f2;
@@ -377,40 +377,34 @@ color: rgb(50,190,245);
 
 
 #art23_3allpict  .column_artsp1{
-  background-color: rgb(0, 0, 0);
-  /* background-image: url('images/socc1.jpg');
-  background-size: contain; */
-  /* height: 77%; */
-  /* background-repeat: no-repeat; */
-  
+  /* background-color: rgb(0, 0, 0); */
+  background-image: url('images/socc1.jpg') ;
+  background-repeat: no-repeat;
+  height: 40vh;
 }
-#art23_3allpict  .column_artsp img{
+.column_artsp1:hover{
+  opacity: .5;
+} 
+/* .column_artsp img{
   cursor:pointer;
 }
 .column_artsp1 img:hover{
   opacity: .5;
-}
+} */
 .column_artsp1 .text_artsp1{
   display: flex;
   color: #f2f2f2;
   position: absolute;
-  font-size: 12px;
+  font-size: 15px;
+  width: 15vw;
 }
 .column_artsp1 .overlay_artsp1{
-  /* padding-bottom: 5px;
-  width: 18.5%;
-  height: 15%;
-  color: #f1f1f1;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 20px;
-  position: absolute;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); */
-  /* display: flex; */
-  /* color: #f2f2f2; */
-  position: relative;
-    font-size: 20px;
-    margin-bottom: 50px;
+  /* position: absolute; */
+    font-size: 18px;
+    margin-top: 59%;
+    height: 14vh;
+    width: 18.3vw;;
+    color: #f1f1f1;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
 } 

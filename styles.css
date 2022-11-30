@@ -4,6 +4,38 @@ body {
   font-family: Arial;
   font-size: 17px;
 }
+/* begin navbar */
+.navbar {
+  position:static;
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+/* end navbar */
 
 /* Slideshow container */
 #slideshow-container {
@@ -160,7 +192,7 @@ opacity: 1;
     color: #f2f2f2;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    /* top: 0; */
     font-size: 12px;
 }
 .column .overlay2{
@@ -186,7 +218,7 @@ opacity: 1;
     color: #f2f2f2;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    /* top: 0; */
     font-size: 12px;
 }
 
@@ -465,5 +497,23 @@ display: flex;
   text-decoration: underline;
   color: rgb(50,190,245);
   
+}
+#footer{
+  background-color: #000;
+}
+
+#footer{
+margin: 0;
+padding: 0;
+height: 10vh;
+}
+#footer .foot1{
+  background-color: black;
+}
+#footer .foot2{
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-style: italic;
 }
 

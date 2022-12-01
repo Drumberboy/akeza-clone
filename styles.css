@@ -4,6 +4,38 @@ body {
   font-family: Arial;
   font-size: 17px;
 }
+/* begin navbar */
+.navbar {
+  position:static;
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+/* end navbar */
 
 /* Slideshow container */
 #slideshow-container {
@@ -160,7 +192,7 @@ opacity: 1;
     color: #f2f2f2;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    /* top: 0; */
     font-size: 12px;
 }
 .column .overlay2{
@@ -186,7 +218,7 @@ opacity: 1;
     color: #f2f2f2;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    /* top: 0; */
     font-size: 12px;
 }
 
@@ -286,7 +318,7 @@ opacity: 1;
   color: #f2f2f2;
   padding: 0px;
   position: absolute;
-  top: 0;
+  /* top: 0; */
   left: 16px;
   font-size: 14px;
 
@@ -414,3 +446,74 @@ color: rgb(50,190,245);
   text-decoration:underline;
   color:white;
 }
+
+#article{
+display: flex;
+
+}
+.article2{
+  width: 50vw;
+}
+.download button {
+  background-color: #32373c;
+  border-radius: 9999px;
+  box-shadow: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.125em;
+  padding: calc(0.667em + 2px) calc(1.333em + 2px);
+  text-align: center;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+.download a{
+  text-decoration: none;
+  color: #fff;
+}
+.imge1art_side{
+  width: 50vw;
+  height: 50vh;
+}
+
+.imge1art_side .img{
+  background-color: rgb(0, 0, 0);
+}
+.imge1art_side img:hover{
+  opacity: .5;
+}
+.textOverImage_un_side{
+  display: flex;
+  color: #f2f2f2;
+  padding: 0px;
+  position: absolute;
+  padding-left: 8px;
+  font-size: 14px;
+}
+.text-buja_side{
+  width: 27vw;
+}
+
+.text-buja_side h3:hover{
+  text-decoration: underline;
+  color: rgb(50,190,245);
+  
+}
+#footer{
+  background-color: #000;
+}
+
+#footer{
+margin: 0;
+padding: 0;
+height: 10vh;
+}
+#footer .foot1{
+  background-color: black;
+}
+#footer .foot2{
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+

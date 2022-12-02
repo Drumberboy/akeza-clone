@@ -9,13 +9,56 @@
     <title>akeza</title>
 </head>
 <body>
+    <div class="header">
+        <div class="topnav">
+                <a  href="accueil.html">Accueil</a>
+                <a href="Qui_nous_sommes.html">Qui nous sommes</a>
+                <a href="Nos_services.html">Nos services</a>
+                <a href="Nous_contacter.html">Nous contacter</a>
+                <a class="dropbtn" href="#" >Langue</a>
+                <div class="dropdown-content">
+                        <a href="#">Francais 1</a>
+                        <a href="#">Anglais 2</a>
+                </div> 
+
+                <div class="search-container">
+                    <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            
+                <div style="display: flex; margin-top: 20px;padding-left: 40px; ">
+                    <div class="display-date" >
+                        <span id="day">day</span>,
+                        <span id="daynum">00</span>
+                        <span id="month">month</span>
+                        <span id="year">0000</span>
+                    </div>
+                    &nbsp;&nbsp;
+                    <div class="display-time"></div>
+                </div>     
+                <br/>
+                <div style="color: white;">
+                    <h4>TERMES DE REFERENCES: Concours d’expression artistique autour du Programme d’Appui à la Société Civile du Burundi (PASCB)</h4>
+                </div>
+        </div> 
+        <br/>
+        <div class="under_topmenu">
+                <a href="accueil.html"><img src="images/akeza-mini.png" alt=""></a>
+                <img src="images/akeza.gif" alt="">
+        </div>
+  </div> 
+   <br/> <br/> 
     <div class="navbar">
-        <a class="active" href="#"><i class="fa fa-newspaper-o"></i> ACTU</a> 
-        <a href="#"><i class="fa fa-line-chart"></i> ECONOMIE</a> 
-        <a href="#"><i class="fa fa-soccer-ball-o"></i> SPORTS</a> 
-        <a href="#"><i class="fa fa-paint-brush"></i> CULTURE</a>
-        <a href="#"><i class="fa fa-users"></i> SOCIETE</a>
-      </div>
+        <a class="active" href="accueil.html"><i class="fa fa-newspaper-o"></i> ACTU</a> 
+        <a href="economie.html"><i class="fa fa-line-chart"></i> ECONOMIE</a> 
+        <a href="sport.html"><i class="fa fa-soccer-ball-o"></i> SPORTS</a> 
+        <a href="culture.html"><i class="fa fa-paint-brush"></i> CULTURE</a>
+        <a href="societe.html"><i class="fa fa-users"></i> SOCIETE</a>
+    </div>
+    <br/>
+    <!-- <div style="margin-left:6%; margin-top: 2%;"> -->
     <div id="slidingImage" style="display: flex; ">
         <div class="slidingShow-image" style="padding: 0 40px; width: 950px;height: 500px; ">
             <div id="slideshow-container">
@@ -337,8 +380,8 @@
                 <div class="art2">
                             <div class="imge1art" style="display:flex;">
                             <div class="textOverImage_art2" >
-                                    <p style="background-color: green" >Atletisme</p><span>&nbsp;</span>
-                                    <p style="background-color: rgb(13, 111, 240);">Sport</p><span>&nbsp;</span>
+                                    <p style="background-color:rgb(13, 111, 240); " >Atletisme</p><span>&nbsp;</span>
+                                    <p style="background-color:#00a99d ">Sport</p><span>&nbsp;</span>
                                 </div> 
                                 <img  src="images/kumutima.jpg" alt="Snow">
                                 <!-- &nbsp;&nbsp;&nbsp; -->
@@ -616,7 +659,7 @@
                 </div> 
             </div>  
             <hr>
-            <div class="article2">
+            <div class="article2" style="margin-left:50px;">
                 <h2>Opportunité de carrière</h2>
                 <div class="art2"> 
                     <img src="images/1.jpg" alt="" >
@@ -625,8 +668,8 @@
                     <button> <a  href="https://akeza.net/wp-content/uploads/2022/09/Internal-Audit-Officer-Job-advert.pdf"> 
                         Téléchargez l'offre</a>  </button>
                 </div>
-                <div style="background-image: url(images/dot.png); width: 40%;">
-                    <p> <span style="background-color: blue; font-size:20px;color:white;width: 40vw;">Suivez-nous sur Facebook</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div style="background-image: url(images/dot.png); width: 50%;">
+                    <p> <span style="background-color: blue; font-size:20px;color:white;width: 50vw;">Suivez-nous sur Facebook</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </p>
                 </div>
                 <div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/akezanet" data-show-faces="true" data-stream="true" data-header="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=1070664122995000&amp;container_width=354&amp;header=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fakezanet&amp;locale=fr_FR&amp;sdk=joey&amp;show_faces=true&amp;stream=true"><span style="vertical-align: bottom; width: 300px; height: 540px;"><iframe name="f35b86846c74ee4"
@@ -743,7 +786,8 @@
                 </div>      
             </div>  
      </div>
-    </div>  
+    </div> 
+    <!-- </div>  -->
     <div  id="footer">
         <div class="foot1">
             <p>footer</p>
@@ -779,6 +823,61 @@
         slides[slideIndex-1].style.display = "block";
         setTimeout(showSlides, 5000); // Change image every 5 seconds
         }
+
+        // time
+const displayTime = document.querySelector(".display-time");
+// Time
+function showTime() {
+  let time = new Date();
+  displayTime.innerText = time.toLocaleTimeString("en-US", { hour12: false });
+  setTimeout(showTime, 1000);
+}
+
+showTime();
+
+// Date
+function updateDate() {
+  let today = new Date();
+
+  // return number
+    let dayName = today.getDay(),
+        dayNum = today.getDate(),
+        month = today.getMonth(),
+        year = today.getFullYear();
+
+    const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ];
+    const dayWeek = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+    ];
+    // value -> ID of the html element
+    const IDCollection = ["day", "daynum", "month", "year"];
+    // return value array with number as a index
+    const val = [dayWeek[dayName], dayNum, months[month], year];
+    for (let i = 0; i < IDCollection.length; i++) {
+        document.getElementById(IDCollection[i]).firstChild.nodeValue = val[i];
+    }
+    }
+
+    updateDate(); 
     </script>
 </body>
 
